@@ -17,3 +17,6 @@ docker run -d \
 -v /opt/homeassistant:/config \
 --network=host \
 ghcr.io/home-assistant/home-assistant:stable
+
+# Remove previous docker images
+docker image prune --force
